@@ -1,0 +1,179 @@
+<html><head>
+	<title>Buttons Game</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		@media and screen (min-width: 450px;) {
+			.mobile-break { display: none; }
+			img{width: auto;height: auto;}
+		}
+		body{
+			margin-left: 8em;
+			margin-right: 8em;
+			white-space: pre;
+			background-color: #81c7b5;
+			width: auto;
+		}
+		img{
+			height: 100%;
+			width: 100%;
+		}
+		h1 {
+			font-family: arial;
+		}
+		p{
+			font-family: arial;
+			font-weight: bold;
+		}
+		button{
+			width: auto;
+			height: auto;
+			font-size: 1.3em;
+			cursor: pointer;
+		}
+		.left{
+			text-align: left;
+		}
+		.right{
+			text-align: right;
+			margin-left: 90%;
+		}
+		.left2{
+			margin-left: 35%;
+		}
+		.right2{
+			margin-left: 60%;
+		}
+		.left3{
+			margin-left: 20%;
+		}
+		.right3{
+			margin-left: 75%;
+		}
+		.center{
+			text-align: center;
+			margin-left: 50%;
+		}
+		#hint{
+			margin-left: 85%;
+			position: fixed;
+			width: 3em;
+			margin-right: 2em;
+		}
+		#hi:hover{
+			background-color: #ccc;
+		}
+	</style>
+	<script>
+		function lose(){
+		alert('Sorry You Lose \n Try Again');
+	}
+	function win(){
+		alert('You Win! : )\n Move On To The Next Level')
+	}
+	//use function below on last level wins
+	function final(){
+		alert ('You Finished The Game !!!! Come Back Soon For More Levels.')}
+
+		function hint(){
+			alert('Hint:\nLater Levels May Have Hidden Diffrences (eg. Things Thaat Happen When You Hover Your Mouse and Things Similar) \nMany Diffrences Are Slight')
+		}			
+
+		</script>
+		
+	
+</head>
+<body>
+	<!--hint button-->
+	<div id="hint">
+<button onclick="hint()"><img src="https://www.clipartkey.com/mpngs/m/6-64549_transparent-lightbulb-clipart-light-bulb-icon-no-background.png"></button></div><!--end of hint button-->
+	<center>
+		<h1 style="font-size: 3em;">Spot The Diffrent Button !</h1>
+		<p>INSTRUCTIONS: The goal is to select the button that is diffrent from the others. The Diffrences Can Be:<br class="mobile-break"><br> Letters, Colors, Borders, Border-color,  Fonts, Spaces, and Font-size. </p>
+		<p>Levels Available: 5</p>
+		<hr>
+	<h1>Level 1</h1>
+</center>
+
+	<button class="right" onclick="lose()">abc1</button>
+	<center>
+	<button onclick="lose()">abc1</button>
+</center>
+	<button class="left" onclick="win()">abc!</button><br><br><br><br><br><br>
+	<button onclick="lose()">abc1</button>
+	<button class="right" onclick="lose()">abc1</button><br><br><br><br>
+	<hr width="100%">
+	<!--end of level 1-->
+	<center><h1>Level 2</h1></center>
+	<button class="left" onclick="lose()">ijklm</button><br><br>
+	<button class="left2" onclick="lose()">ijklm</button>
+	<button class="right2" onclick="lose()">ijklm</button><br><br><br>
+	<button class="right" onclick="win()">ijkln</button><br>
+	<button class="left2" onclick="lose()">ijklm</button><br>
+<center>
+	<button onclick="lose()">ijklm</button><br><br><br><br><br><br>
+</center>
+<hr>
+<!--end of level 2-->
+<center><h1>Level 3</h1></center>
+
+<button class="left3" onclick="win()">  1  </button>
+<button class="right2" onclick="lose()">1</button>
+<button class="center" onclick="lose()">1</button>
+<button class="left" onclick="lose()">1</button>
+<button class="right" onclick="lose()">1</button>
+<button class="right3" onclick="lose()">1</button>
+<br><br>
+<hr>
+<!--end of level 3-->
+<center><h1>Level 4</h1></center>
+<button class="right" onclick="lose()">56780</button>
+<button class="left3" onclick="lose()">56780</button>
+<button class="center" onclick="lose()">56780</button>
+<button class="right2" onclick="lose">56780</button>
+<button class="left" onclick="lose()">56780</button>
+<button class="left2" style="border: dashed; border-width: 1px;" onclick="win()">56780</button>
+<button class="right" onclick="lose()">56780</button>
+<br><br>
+<hr>
+<!--end of level 4-->
+<center><h1>Level 5</h1></center>
+<button class="left2" onclick="lose()">hello</button>
+<button class="right" style="font-family: times new roman" onclick="win()">hello</button>
+<button class="right3" onclick="lose()">hello</button>
+<button class="left" onclick="lose()">hello</button>
+<button class="center" onclick="lose()">hello</button>
+<button class="left3" onclick="lose()">hello</button>
+<button class="right2" onclick="lose()">hello</button>
+<br><br>
+<hr>
+<center>
+<h1>Level 6</h1>
+</center>
+	<button class="left2" onclick="lose()">     </button>
+	<button class="right3" onclick="lose()">     </button>
+	<button class="center" onclick="lose()">     </button>
+	<button class="right" onclick="lose()">     </button>
+	<button class="left3" onclick="lose()">     </button>
+	<button class="left" onclick="lose()">     </button>
+	<button class="center" onclick="lose()">     </button>
+	<button class="right" onclick="win()">    </button>
+	<br><br>
+	<hr>
+	<!--end of level 6-->
+	<center><h1>Level 7</h1></center>
+	<button id="hi" class="left3" onclick="final()">12345</button>
+	<button class="right" onclick="lose()">12345</button>
+	<button class="right2" onclick="lose()">12345</button>
+	<button class="left2" onclick="lose()">12345</button>
+	<button class="right3" onclick="lose()">12345</button>
+	<button class="left" onclick="lose()">12345</button>
+	<button class="right" onclick="lose()">12345</button>
+	<button class="center" onclick="lose()">12345</button>
+	<br><br>
+	<hr>
+
+<center><p>That's The End Thanks For Playing More Levels Coming Soon</p>
+<footer>Created By Carson 2020</footer>
+</center>
+</body>
+</html>
